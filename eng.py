@@ -10,10 +10,10 @@ attack_in_progress = False
 current_attack = None  # Store details of the current attack
 attack_history = []  # Store attack logs
 
-TELEGRAM_BOT_TOKEN = '7252565213:AAE-cL8qz05dMtNONxaWAFyKMikXw9WCjvo'
-ADMIN_USER_ID = 1342302666
+TELEGRAM_BOT_TOKEN = '7511149271:AAHamBCcZhW2sl1sCBKz1S4IvSD4CzJe5EM'
+ADMIN_USER_ID = 1216702307
 MONGO_URI = "mongodb+srv://Kamisama:Kamisama@kamisama.m6kon.mongodb.net/"
-DB_NAME = "Sikandar"
+DB_NAME = "Sikandarr2"
 COLLECTION_NAME = "users"
 attack_in_progress = False
 ATTACK_TIME_LIMIT = 300  # Maximum attack duration in seconds
